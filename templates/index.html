@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>แอพ OCR แปลงรูปภาพ/PDF เป็นข้อความ</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        h1 { text-align: center; }
+        .upload-form { display: flex; flex-direction: column; gap: 15px; }
+        .btn { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .btn:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>อัปโหลดไฟล์รูปภาพ หรือ PDF</h1>
+        <p>ระบบจะทำการดึงข้อความ (OCR) จากไฟล์ที่ท่านอัปโหลด</p>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="file" required>
+            <input type="submit" value="แปลงเป็นข้อความ" class="btn">
+        </form>
+    </div>
+</body>
+</html>

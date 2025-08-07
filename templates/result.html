@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ผลลัพธ์ OCR</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        h1 { text-align: center; }
+        .result-box { background-color: #f9f9f9; border: 1px solid #ddd; padding: 15px; white-space: pre-wrap; word-wrap: break-word; margin-top: 20px; }
+        a { display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ข้อความที่ดึงได้จากไฟล์</h1>
+        <div class="result-box">
+            <pre>{{ extracted_text }}</pre>
+        </div>
+        <a href="/">กลับไปอัปโหลดไฟล์อื่น</a>
+    </div>
+</body>
+</html>
